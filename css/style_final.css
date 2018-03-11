@@ -1,0 +1,322 @@
+/* Default Values
+    Font Family: Roboto Condesed 
+    #fff        White 
+    #000        Black 
+*/
+
+/* CSS Rule */
+
+html,
+body {
+    height: 100%;
+    /* so pic covers entire screen */
+}
+
+body {
+    /*  font family property */
+    /* Add as many fonts as you want */
+    font-family: Times New Roman;
+    color: #000;
+}
+
+/* Parallax scrolling effect for all sections */
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* Parallax scrolling effect for all sections */
+    background-attachment: fixed;
+}
+
+/* Home section ***************************************/
+
+#home {
+    height: 100%;
+}
+
+#home-cover {
+    height: 100%;
+    background-image: url("../img/ironman.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* as large as possible */
+    background-position: center;
+}
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h3 {
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: Luminari;
+    font-size: 55px;
+    font-weight: 700;
+    /* see Roboto Condensed in index.html for options */
+    margin: 20px 0 20px 0;
+}
+
+#home-heading h4 {
+    color: #fff;
+    font-family: fantasy;
+    font-size: 40px;
+    font-weight: 500;
+    /* see Roboto Condensed in index.html for options */
+    margin: 20px 0 20px 0;
+}
+/************ End of Home Section *****************/
+
+/* Buttons *************************************/
+
+.btn-general {
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background: #fff;
+    color: #F7D87B;
+}
+
+.btn-blue {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    background: #fff;
+    color: #fff;
+}
+
+/************ End of Buttons *****************/
+
+/* Animate https://github.com/daneden/animate.css *******/
+
+#home-cover,
+#home-heading,
+#home-btn {
+    animation-duration: 5s;
+}
+
+#home-cover {
+    animation-delay: 1s;
+}
+
+#home-heading {
+    animation-delay: 3s;
+}
+
+#home-btn {
+    animation-delay: 6s;
+}
+
+/************ End of Animate ********************/
+
+/* About Section ********************************/
+
+#about-bg-diagonal {
+    width: 60%;
+    height: 500px;
+    float: right;
+    background-image: url(../img/ironman-tech.jpg);
+    border-left: 200px solid black;
+    border-top: 500px solid transparent;
+}
+
+#about {
+    margin-top: 50px;
+    background-color: black;
+}
+
+#about-content-box {
+    height: 500px;
+}
+
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about-content-box-inner h3{
+    color: #fff;
+}
+
+#about-desc{
+    color: #fff;
+}
+/************ End of About *****************/
+
+
+/* Work Section ********************************/
+
+#work{
+    background-color: black;
+}
+
+.content-box h3 {
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.img-wrapper img:hover {
+    transform: scale(2.0);
+}
+
+.img-wrapper {
+    overflow: hidden;
+}
+
+/* transition property https://css-tricks.com/almanac/properties/t/transition/ */
+.img-wrapper img {
+    transition: transform .5s ease;
+}
+
+.imgWork {
+    height: 250px;
+    width: 65%;
+}
+
+.cover {
+  object-fit: cover;
+  width: 50px;
+  height: 100px;
+}
+/***********************************************/
+
+/* Social ********************************/
+
+.social-list {
+    padding-left: 0;
+
+}
+
+.social-list li {
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.social-icon i {
+    font-size: 30px;
+}
+
+.icon-black i {
+    color: #000;
+}
+
+.social-icon i:hover {
+    color: #34c6d3;
+}
+
+.icon-white {
+    color: #fff;
+
+}
+
+/***********************************************/
+
+/* Contact ********************************/
+
+footer {
+
+    background-color: darkgrey;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+    /* last value 0.1 is for transparency */
+}
+
+
+#contact-left h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#contact-left p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#contact-info {
+    background-color: #fff;
+}
+
+
+/***********************************************/
+
+/* Footer ********************************/
+
+#footer-bottom {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+#footer-copyrights p {
+    margin: 0;
+    color: #fff;
+}
+
+#footer-menu {
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#footer-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#footer-menu ul li {
+    display: inline-block;
+}
+
+#footer-menu a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#footer-menu a:hover {
+    color: #34c6d3;
+}
+
+/***********************************************/
